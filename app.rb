@@ -14,7 +14,8 @@ module FormsLab
 
     post '/pirates' do
       @pirate_name = params[pirate[name]]
-      
+      @ship_name_1 = params[pirate[ships][0][name]]
+      @ship_name_2 = params[pirate[ships][1][name]]
       erb :'pirates/show'
     end
 
