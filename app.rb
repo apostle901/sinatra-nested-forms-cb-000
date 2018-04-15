@@ -18,8 +18,8 @@ module FormsLab
       #@ship_name_1 = params[pirate[ships][0]["name"]]
       #@ship_name_2 = params[pirate[ships][1]["name"]]
       #@pirate_name = pirate[:name]
-      @ship_1 = pirate[:ships][0]
-      @ship_2 = pirate[:ships][1]
+      @ship_1 = @pirate[:ships][0]
+      @ship_2 = @pirate[:ships][1]
       erb :'pirates/show'
     end
 
