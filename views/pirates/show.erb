@@ -1,10 +1,16 @@
 <h1>Display your Pirate here</h1>
 <p> Pirate Name: <%= @pirate[:name] %> </p>
+<p> Pirate Height: <%= @pirate[:height] %> </p>
+<p> Pirate Wright: <%= @pirate[:weight] %> </p>
 
 <h2>Display your first ship here</h2>
 <p> Ship 1 Name: <%= @ship_1[:name] %></p>
+<p> Ship 1 Type: <%= @ship_1[:type] %></p>
+<p> Ship 1 Booty: <%= @ship_1[:booty] %></p>
 
 <h2>Display your second ship here</h2>
 <% unless @ship_2.nil? %>
 <p> Ship 2 Name: <%= @ship_2[:name] %></p>
+<p> Ship 2 Type: <%= @ship_1[:type] %></p>
+<p> Ship 2 Booty: <%= @ship_1[:booty] %></p>
 <% end %>
